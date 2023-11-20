@@ -22,7 +22,7 @@ try {
     $key = "Basic $base64"
     $headers = @{"authorization" = $Key }
 
-    Write-Verbose "Creating HelloIDAccount for Group: [$($formObject.name)]"
+    Write-Verbose "Creating HelloIDGroup for: [$($formObject.name)]"
     $splatCreateUserParams = @{
         Uri         = "$($portalBaseUrl)/api/v1/groups"
         Method      = "POST"
